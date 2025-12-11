@@ -1,0 +1,10 @@
+persons:
+  - name: Ahmet
+    age: 25
+    skor: 85
+  - name: Ayşe
+    age: 30
+    skor: 92
+  - name: Mehmet
+    age: 22
+    skor: 78
