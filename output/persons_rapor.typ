@@ -1,5 +1,3 @@
-#set page(paper: "a6")
-
 = Kişiler Raporu
 
 #table(

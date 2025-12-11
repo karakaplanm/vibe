@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import matplotlib.pyplot as plt
-from mylib import toplama
+from mylib import add
 
 # YAML verilerini doğrudan dictionary olarak göm
 veriler = {
@@ -34,10 +34,10 @@ typst_content += """#figure(
 )
 """
 
-with open('persons_rapor.typ', 'w', encoding='utf-8') as f:
+with open('../output/persons_rapor.typ', 'w', encoding='utf-8') as f:
     f.write(typst_content)
 
-print("persons_rapor.typ oluşturuldu!")
+print("output/persons_rapor.typ oluşturuldu!")
 
 # Yaşa göre skor bar grafiği oluştur
 persons_sorted = sorted(veriler['persons'], key=lambda x: x['age'])
@@ -53,8 +53,10 @@ plt.ylim(0, 100)
 for i, v in enumerate(skors):
     plt.text(i, v + 2, str(v), ha='center', fontweight='bold')
 plt.tight_layout()
-plt.savefig('graf1.svg', format='svg')
-print("graf1.svg oluşturuldu!")
+plt.savefig('../output/graf1.svg', format='svg')
+print("output/graf1.svg oluşturuldu!")
 
-# şimdi fonksiyonu kullanalım
-print(toplama(1, 2))
+# now let's use the function
+print(add(1, 2))
+
+print("İşler tamamlandı!")
