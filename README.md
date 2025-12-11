@@ -1,4 +1,6 @@
+
 # vibe
+
 
 Bu proje kişi verilerini farklı formatlarda yöneten ve Typst raporu oluşturan bir Python uygulamasıdır.
 
@@ -75,4 +77,3 @@ typst compile output/persons_rapor.typ output/persons_rapor.pdf
 - matplotlib
 - pyyaml (opsiyonel)
 - typst (PDF derlemek için)
-
